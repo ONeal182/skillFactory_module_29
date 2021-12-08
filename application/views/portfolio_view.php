@@ -1,18 +1,12 @@
-<h1>Портфолио</h1>
-<p>
-<table>
-	Все проекты в следующей таблице являются вымышленными, поэтому даже не пытайтесь перейти по приведенным ссылкам.
-	<tr>
-		<td>Год</td>
-		<td>Проект</td>
-		<td>Описание</td>
-	</tr>
-	<?php
-
-	foreach ($data as $row) {
-		echo '<tr><td>' . $row['Year'] . '</td><td>' . $row['Site'] . '</td><td>' . $row['Description'] . '</td></tr>';
-	}
-
-	?>
-</table>
-</p>
+<div class="card-group">
+	<?php foreach ($data as $row) { ?>
+		<div class="card">
+			<img class="card-img-top" src="<?php echo $row['img'] ?>" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title"><?php echo $row['Site'] ?></h5>
+				<p class="card-text"><?php echo $row['Description'] ?></p>
+				<p class="card-text"><small class="text-muted"><?php $row['Year'] ?></small></p>
+			</div>
+		</div>
+	<? } ?>
+</div>

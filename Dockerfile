@@ -12,7 +12,7 @@ WORKDIR /var/www
 
 # Установка зависимостей
 RUN apt-get update && apt-get install -y \
-    # git \
+    git \
     curl \
     libpng-dev \
     libonig-dev \
