@@ -6,13 +6,23 @@ class Route
 		// контроллер и действие по умолчанию
 		$controller_name = 'Main';
 		$action_name = 'index';
-		$routes = $_GET['url'];
+		$routes = explode('/', $_SERVER['REQUEST_URI']);
 
 		// получаем имя контроллера
-		if (!empty($routes)) {
-			$controller_name = $routes;
-		}
+		// if (!empty($routes)) {
+		// 	$controller_name = $routes;
+		// }
 
+		if ( !empty($routes[1]) )
+		{	
+			$controller_name = $routes[1];
+		}
+		
+		// получаем имя экшена
+		if ( !empty($routes[2]) )
+		{
+			$action_name = $routes[2];
+		}
 		// добавляем префиксы
 		$model_name = 'model_' . $controller_name;
 		$controller_name = 'controller_' . $controller_name;
