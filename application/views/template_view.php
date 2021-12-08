@@ -6,6 +6,10 @@
     <title>Главная</title>
 </head>
 
-<body><?php $content_view; ?></body>
+<body>
+    <article>
+    <?php include 'application/views/'.$content_view; ?>
+    </article>
+</body>
 
 </html>
