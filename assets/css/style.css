@@ -6,8 +6,14 @@ body {
     font-weight: bold;
     color: rgb(189, 196, 203)
 }
+
 .carousel-item{
     height: 500px;
+}
+.row-style{
+    margin-bottom: 20px;
+
+    margin-top: 20px;
 }
 .card {
     padding: 2% 7%;

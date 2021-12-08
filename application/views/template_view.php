@@ -68,7 +68,7 @@
     </header>
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row row-style">
                 <?php include 'application/views/' . $content_view; ?>
             </div>
         </div>

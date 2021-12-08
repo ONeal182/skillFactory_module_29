@@ -1,0 +1,2 @@
+<h1 class="text-dark">Название компании</h1>
+<p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro dolor alias neque illo doloribus animi. Voluptatum maxime tenetur nesciunt qui, officia nemo labore! Doloremque temporibus dolorum aperiam odio consequatur!</p>
