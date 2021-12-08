@@ -2,7 +2,7 @@
 class Model_Portfolio extends Model
 {
 	public function get_data()
-	{	
+	{
 		// Здесь мы просто симулируем реальные данные.
 		return array(
 			array(
